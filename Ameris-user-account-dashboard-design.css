@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #002855;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar nav a.active {
+    border-bottom: 2px solid #fdb913;
+}
+
+.sign-out a {
+    color: white;
+}
+
+.account-balance {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+
+.balance-card {
+    background-color: #f0f4ff;
+    border: 1px solid #d0d8ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 1rem;
+    max-width: 300px;
+}
+
+.amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2a4dff;
+}
+
+.transactions {
+    margin: 1rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+.transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.transactions-header label {
+    margin-left: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+th {
+    background-color: #2a4dff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.credit {
+    color: green;
+    font-weight: bold;
+}
+
+.debit {
+    color: red;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .account-balance {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .balance-card {
+        width: 70%;
+    }
+
+    .transactions-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transactions-header label, .transactions-header select {
+        margin: 0.1rem 0;
+    }
+
+    table, th, td {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .navbar nav a {
+        margin: 1px 0;
+    }
+
+@media (min-width: 768px) {
+    .account-balance {
+        justify-content: space-around;
+    }
+
+    .transactions-header {
+        justify-content: space-between;
+    }
+}
+}

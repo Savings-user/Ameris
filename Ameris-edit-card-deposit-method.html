@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Deposit Method - Ameris Bank</title>
+
+  <!-- Font Awesome Icons -->
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="Ameris-edit-card-deposit-method-design.css">
+ 
+</head>
+
+
+<body>
+  <div class="payment-method-container">
+    <h2>Edit deposit method</h2>
+
+    <!-- Credit/Debit Card Option -->
+       
+    <form id="payment-form">
+    <div class="payment-method" id="card-option">
+      <label>
+        <input type="radio" name="payment" checked>
+        <span class="radio-label">
+          <i class="fas fa-credit-card"></i> Credit or Debit Card
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" class="payment-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" class="payment-icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="AMEX" class="payment-icon">
+        </span>
+      </label>
+      <div class="card-details">
+        <input type="text" placeholder="Cardholder Name" class="input-field">
+        <input type="text" placeholder="Card Number" maxlength="16" class="input-field">
+        <div class="card-row">
+          <input type="text" placeholder="MM / YY" class="input-field small">
+          <input type="text" placeholder="CVC" class="input-field small">
+        </div>
+      </div>
+    </div>
+   
+    
+
+    <!-- Submit Button -->
+       
+    <a href="Ameris-add-deposit-method-under-review.html" class="add-payment-link">
+    <button id="submit-btn">Add Deposit Method</button>
+    </a>
+  </div>
+
+  <!-- Custom JavaScript -->
+   
+  <script src="Ameris-edit-card-deposit-method-js.js"></script>
+ 
+</body>
+
+
+
+</html>

@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.payment-method-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #003087;
+  text-align: center;
+}
+
+/* Payment Method Options */
+.payment-method {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.payment-method:hover {
+  background-color: #f1f1f1;
+}
+
+.payment-method label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.payment-icon {
+  height: 24px;
+  width: auto;
+}
+
+.crypto-details {
+  margin-top: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.card-row {
+  display: flex;
+  gap: 10px;
+}
+
+.card-row .small {
+  width: 50%;
+}
+
+/* Submit Button */
+#submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+#submit-btn:hover {
+  background-color: #003087;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .payment-method-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .input-field {
+    font-size: 0.9rem;
+  }
+
+  #submit-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-method label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .radio-label {
+    gap: 5px;
+  }
+
+  .payment-icon {
+    height: 20px;
+  }
+}

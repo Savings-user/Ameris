@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Deposit Method - Ameris Bank</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Ameris-edit-card-deposit-method-design.css">
+</head>
+<body>
+  <div class="payment-method-container">
+    <h2>Edit deposit method</h2>
+
+   <!-- Online Banking Option -->
+   <div class="payment-method" id="crypto-option">
+    <label>
+      <input type="radio" name="payment">
+      <span class="radio-label">
+        <i class="fa fa-bank"></i> Online Banking
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Square_Cash_app_logo.svg" alt="Cash App Logo" class="payment-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/PayPal_2024_%28Icon%29.svg" alt="PayPal Logo" class="payment-icon">
+        </span>
+    </label>
+    <div class="crypto-details">
+      <select class="input-field">
+        <option value="bitcoin">Cash App</option>
+        <option value="ethereum">PayPal</option>
+        <option value="litecoin">Venmo</option>
+        <option value="litecoin">Zelle</option>
+      </select>
+      <input type="text" placeholder="Email address" class="input-field">
+      <input type="number" placeholder="Account number (PayPal, Cash app only)" class="input-field">
+      <input type="number" placeholder="Routing number (PayPal, Cash app only)" class="input-field">
+    </div>
+  </div>
+
+   
+    
+
+    <!-- Submit Button -->
+    <a href="Ameris-add-deposit-method-under-review.html" class="add-payment-link">
+    <button id="submit-btn">Add Deposit Method</button>
+    </a>
+  </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameris Bank - User Account Dashboard</title>
+    <link rel="stylesheet" href="Ameris-user-account-dashboard-design.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">AMERIS BANK</div>
+            <nav>
+                <a href="Ameris-user-account-dashboard.html" class="active">Accounts</a>
+                <a href="Ameris-user-deposit-dashboard.html">Deposit</a>
+                <a href="Ameris-user-withdraw-dashboard.html">Withdraw</a>
+            </nav>
+            <div class="sign-out">
+                <a href="index.html">Sign Out</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Account Balance Section -->
+    <section class="account-balance">
+        <div class="balance-card">
+            <h3>Current Account</h3>
+            <p class="amount">0 <span>USD</span></p>
+        </div>
+        <div class="balance-card">
+            <h3>Savings Account</h3>
+            <p class="amount">500 <span>USD</span></p>
+        </div>
+    </section>
+
+    <!-- Transactions Section -->
+    <section class="transactions">
+        <div class="transactions-header">
+            <h3>Transactions</h3>
+            <label for="filter">Filter by:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="credit">Credit</option>
+                <option value="debit">Debit</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Details</th>
+                    <th>Amount</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="transaction-table">
+                <tr>
+                    <td class="credit">Credit</td>
+                    <td>07/01</td>
+                    <td>Card Deposit</td>
+                    <td>+500 USD</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="Ameris-user-account-dashboard-js.js"></script>
+</body>
+</html>
